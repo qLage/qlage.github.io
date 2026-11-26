@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f2eb">
+  <script>try { if (localStorage.getItem('portfolio-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch {}</script>
+  <meta name="description" content="Утилита для проверки Windows на признаки скрытого майнинга и подозрительных изменений в системе.">
+  <title>Windows Miner Audit — Кирилл Галдин</title>
+  <link rel="icon" href="icon.svg?v=13">
+  <link rel="preload" href="assets/type/rubik.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="design.css?v=28">
+  <script defer src="site.js?v=20"></script>
+</head>
+<body data-page="case">
+  <a class="skip" href="#main">К содержимому</a>
+  <header class="mast wrap">
+    <a class="brand" href="index.html" aria-label="На главную — Кирилл Галдин">
+      <span class="fold" aria-hidden="true"></span>qlage
+    </a>
+    <nav aria-label="Основная навигация">
+      <a href="index.html#work">Проекты</a>
+      <a href="index.html#stack">Стек</a>
+      <a href="index.html#resume">Обо мне</a>
+    </nav>
+    <div class="mast-actions">
+      <button class="theme-switch" type="button" aria-label="Тёмная тема" aria-pressed="false" hidden><span aria-hidden="true"></span></button>
+      <a class="contact-nav" href="#contact">Контакты</a>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <a class="return" href="index.html#work">‹ &nbsp;Все проекты</a>
+    <header class="case-intro">
+      <div>
+        <p class="profession">Утилита для Windows</p>
+        <h1><span class="title-word"><span>Windows</span></span> <span class="title-word"><span>Miner</span></span> <span class="title-word"><span>Audit</span></span></h1>
+        <p class="case-lead" data-enter="copy">Утилита для проверки Windows на признаки скрытого майнинга и подозрительных изменений в системе.</p>
+      </div>
+      <dl class="case-facts" data-enter="copy">
+        <div><dt>Платформа</dt><dd>Windows 10/11 x64, portable EXE</dd></div>
+        <div><dt>Стек</dt><dd>Python, Tkinter, PowerShell</dd></div>
+        <div><dt>Проект</dt><dd><a class="bot-link" href="https://github.com/qLage/windows-miner-audit">GitHub</a> · <a class="bot-link" href="https://github.com/qLage/windows-miner-audit/releases/latest/download/WindowsMinerAudit.exe">Скачать EXE</a></dd></div>
+      </dl>
+    </header>
+    <section class="gallery theme-miner-audit" aria-label="Экраны проекта">
+      <a class="screen-stage" data-enter="screen" href="assets/miner-audit-dark-ru.png" aria-label="Открыть скриншот в полном размере">
+        <img class="screen" src="assets/miner-audit-dark-ru.png" alt="Результаты проверки">
+        <span class="expand">Увеличить</span>
+      </a>
+      <div class="gallery-info" data-enter="copy">
+        <div aria-live="polite">
+          <h2 class="frame-title">Результаты проверки</h2>
+          <p class="frame-description">На экране — демонстрационные находки с пояснениями.</p>
+        </div>
+        <div class="thumbs">
+          <a href="assets/miner-audit-dark-ru.png" class="thumb" data-label="Результаты проверки"
+            data-description="На экране — демонстрационные находки с пояснениями." aria-label="Русский, тёмная тема" aria-current="true">
+            <img src="assets/miner-audit-dark-ru.png" alt="" loading="lazy">
+          </a>
+          <a href="assets/miner-audit-light-en.png" class="thumb" data-label="Английский, светлая тема"
+            data-description="Результаты проверки на английском в светлой теме." aria-label="Английский, светлая тема">
+            <img src="assets/miner-audit-light-en.png" alt="" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+    <dialog class="viewer" aria-label="Полноэкранный просмотр">
+      <div class="viewer-top"><strong class="viewer-title"></strong><button class="close-view">Закрыть</button></div>
+      <div class="viewer-image"><img alt=""></div>
+      <div class="viewer-controls"><button class="zoom" aria-pressed="false">Оригинальный размер</button>
+        <div class="paging"><button class="prev" aria-label="Предыдущий скриншот">←</button>
+          <span class="page-number" aria-live="polite"></span><button class="forward" aria-label="Следующий скриншот">→</button></div>
+      </div>
+    </dialog>
+    <div class="story">
+      <nav class="chapters" aria-label="Разделы кейса">
+        <a href="#task">Задача</a>
+        <a href="#work-done">Решение</a>
+        <a href="#result">Результат</a>
+      </nav>
+      <div class="story-body">
+        <section id="task"><h2 data-enter="heading">Задача</h2><p data-enter="copy">Когда Windows внезапно начинает тормозить, нужно быстро проверить процессы, автозапуск и защиту и понять, какие находки требуют внимания.</p></section>
+        <section id="work-done"><h2 data-enter="heading">Решение</h2><p data-enter="copy">Быстрая проверка собирает признаки из работающей Windows. Расширенная добавляет службы, WMI, сетевые связи и короткий замер нагрузки. У каждой находки есть объяснение и рекомендация.</p></section>
+        <section id="result"><h2 data-enter="heading">Результат</h2><p data-enter="copy">Отчёты можно открыть в браузере или сохранить локально в HTML и JSON. Проверка выполняется только на чтение. Защищённые процессы и угрозы, скрытые от работающей Windows, ограничивают покрытие.</p>
+          <p data-enter="copy"><a class="bot-link" href="https://github.com/qLage/windows-miner-audit/blob/main/README.ru.md">Инструкция на русском</a> · <a class="bot-link" href="https://github.com/qLage/windows-miner-audit/blob/main/README.en.md" lang="en">English documentation</a></p>
+        </section>
+      </div>
+    </div>
+    <nav class="next" aria-label="Переход между проектами">
+      <a href="index.html#work">Все проекты</a>
+      <a href="case-vortex-helper.html"><small>Другой проект для Windows</small>Vortex Helper <i class="go" aria-hidden="true"></i></a>
+    </nav>
+  </main>
+
+  <footer id="contact" class="wrap foot">
+    <h2 data-enter="heading">Контакты</h2>
+    <div class="foot-links">
+      <a href="mailto:qqlage@gmail.com">qqlage@gmail.com</a>
+      <a href="https://t.me/qlage" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <a href="https://github.com/qlage" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="resume.html">Резюме</a>
+    </div>
+  </footer>
+</body>
+</html>

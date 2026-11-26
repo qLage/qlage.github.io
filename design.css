@@ -170,6 +170,8 @@ main > :is(.collection, .stack-section, .profile) { margin-inline: var(--gutter)
 .theme-racs { --mount: #beb6d2; --shot: shot-racs; }
 .theme-music { --mount: #95b8c8; --shot: shot-music; }
 .theme-crm { --mount: #c5c9f2; --shot: shot-crm; }
+.theme-miner-audit { --mount: #a3c6b9; --shot: shot-miner-audit; }
+.theme-vortex-helper { --mount: #c2b5d2; --shot: shot-vortex-helper; }
 .sample-stack { position: sticky; top: clamp(16px, 6vh, 64px); align-self: start; }
 .departing-art { position: absolute; top: 0; left: 0; right: 0; z-index: 1; pointer-events: none; }
 .departing-art.theme-estate img { object-fit: cover; object-position: top center; }
